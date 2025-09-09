@@ -1,0 +1,20 @@
+@{
+    Layout = null;
+}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Editor</title>
+  </head>
+  <body style="margin:0;padding:0;">
+    <form action="@ViewBag.EditorUrl" method="post" enctype="multipart/form-data" target="coolframe">
+      <input type="hidden" name="access_token" value="@ViewBag.AccessToken" />
+      <input type="hidden" name="access_token_ttl" value="0" />
+      <input type="submit" value="Open" />
+    </form>
+    <iframe name="coolframe" style="width:100vw;height:90vh;border:0;"></iframe>
+    <script>document.forms[0].submit();</script>
+  </body>
+</html>

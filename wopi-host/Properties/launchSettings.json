@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "WopiHost": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:8080",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "COLLABORA__BASEURL": "http://localhost:9980",
+        "APP__BASEURL": "http://localhost:8080"
+      }
+    }
+  }
+}

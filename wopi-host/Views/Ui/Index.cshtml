@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "WOPI Host — Home";
+}
+<h2>Open demo file in Collabora</h2>
+<p>
+  <b>App Base:</b> @ViewBag.AppBase<br/>
+  <b>Collabora:</b> @ViewBag.Collabora
+</p>
+<form asp-action="Open" method="post">
+  <input type="hidden" name="fileId" value="@ViewBag.FileId" />
+  <button type="submit">Open in Collabora</button>
+</form>

@@ -1,0 +1,13 @@
+[build]
+
+[deploy]
+
+[[services]]
+name = "wopi-host"
+root = "wopi-host"
+start = "dotnet WopiHost.dll"
+
+[[services]]
+name = "collabora"
+root = "collabora"
+start = "/bin/sh -lc 'bash /app/start-collabora.sh'"
